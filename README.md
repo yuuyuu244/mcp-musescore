@@ -142,6 +142,18 @@ This MCP server provides comprehensive MuseScore control:
 - `set_time_signature(numerator, denominator)` - Change time signature
 - `processSequence(sequence)` - Execute multiple commands in batch
 
+## Sample Music
+
+Check out the `/examples` folder for sample MuseScore files demonstrating various musical styles:
+
+- **Asian Instrumental** - Traditional Asian-inspired instrumental piece
+- **String Quartet** - Classical string quartet arrangement
+
+Each example includes:
+- `.mscz` - MuseScore file (editable)
+- `.pdf` - Sheet music
+- `.mp3` - Audio preview
+
 ## Usage Examples
 
 ### Creating a Simple Melody
