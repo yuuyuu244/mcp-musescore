@@ -1,0 +1,11 @@
+[project]
+name = "mcp-musescore"
+version = "0.1.0"
+description = "MCP Server for MuseScore"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastmcp>=2.12.4",
+    "mcp>=1.15.0",
+    "websockets>=15.0.1",
+]

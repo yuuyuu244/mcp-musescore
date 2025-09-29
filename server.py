@@ -1,4 +1,4 @@
-from mcp.server.fastmcp import FastMCP
+from fastmcp import FastMCP
 import sys
 import logging
 
@@ -22,7 +22,7 @@ logging.basicConfig(
 logger = logging.getLogger("MuseScoreMCP")
 
 # Create the MCP app and client
-mcp = FastMCP("MuseScore Assistant")
+mcp: FastMCP = FastMCP("MuseScore Assistant")
 client = MuseScoreClient()
 
 # Setup all tool categories
@@ -38,4 +38,4 @@ if __name__ == "__main__":
     sys.stderr.write("MuseScore MCP Server starting up...\n")
     sys.stderr.flush()
     logger.info("MuseScore MCP Server is running")
-    mcp.run()
+    mcp.run(transport="streamable-http")
